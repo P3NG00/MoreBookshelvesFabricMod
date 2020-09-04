@@ -1,0 +1,38 @@
+{
+  "schemaVersion": 1,
+  "id": "p3fabricmod",
+  "version": "${version}",
+  "name": "P3NG00's Fabric Mod",
+  "description": "This is my Fabric Mod template!",
+  "authors": [
+    "P3NG00"
+  ],
+  "contact": {
+    "homepage": "",
+    "sources": "https://github.com/P3NG00/%s",
+    "issues": "https://github.com/P3NG00/%s/issues"
+  },
+  "license": "MIT",
+  "icon": "icon.png",
+  "environment": "*",
+  "entrypoints": {
+    "main": [
+      "com.p3ng00.modid.Main"
+    ],
+    "client": [
+      "com.p3ng00.modid.Client"
+    ],
+    "server": [
+      "com.p3ng00.modid.Server"
+    ]
+  },
+  "mixins": [
+    "modid.mixins.json"
+  ],
+  "depends": {
+    "fabricloader": ">=0.9.0",
+    "fabric": "*",
+    "minecraft": "1.16.x"
+  },
+  "accessWidener": "modid.accesswidener"
+}
