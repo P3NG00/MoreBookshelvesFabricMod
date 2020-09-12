@@ -1,16 +1,10 @@
 {
   "required": true,
   "minVersion": "0.8",
-  "package": "com.p3ng00.modid.mixin",
+  "package": "com.p3ng00.morebookshelves.mixin",
   "compatibilityLevel": "JAVA_8",
   "mixins": [
     "Mixin"
-  ],
-  "client": [
-    "Client"
-  ],
-  "server": [
-    "Server"
   ],
   "injectors": {
     "defaultRequire": 1
