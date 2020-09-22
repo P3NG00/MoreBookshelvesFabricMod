@@ -3,6 +3,7 @@ package com.p3ng00.morebookshelves.mixin;
 import net.fabricmc.fabric.api.tag.TagRegistry;
 import net.minecraft.block.Block;
 import net.minecraft.block.Blocks;
+import net.minecraft.data.server.BlockTagsProvider;
 import net.minecraft.enchantment.EnchantmentHelper;
 import net.minecraft.enchantment.EnchantmentLevelEntry;
 import net.minecraft.inventory.Inventory;
@@ -41,7 +42,7 @@ abstract class EnchantmentScreenHandlerMixin extends ScreenHandler {
 
                             if ((j != 0 || k != 0) && world.isAir(blockPos.add(k, 0, j)) && world.isAir(blockPos.add(k, 1, j))) {
 
-                                Tag<Block> bookshelves = BlockTags.getTagGroup().getTag(new Identifier("morebookshelves", "bookshelves"));
+                                Tag<Block> bookshelves = BlockTags.getContainer().getOrCreate(new Identifier("morebookshelves", "bookshelves"));
 
                                 if (world.getBlockState(blockPos.add(k * 2, 0, j * 2)).isIn(bookshelves))
                                     ++i;
