@@ -2,8 +2,8 @@
   "schemaVersion": 1,
   "id": "morebookshelves",
   "version": "${version}",
-  "name": "More Bookshelves Mod",
-  "description": "Adds Bookshelf variations as the other types of wood!",
+  "name": "Bookshelving",
+  "description": "Adds the other 7 Bookshelf variations as the other types of vanilla wood!",
   "authors": [
     "P3NG00"
   ],
@@ -11,7 +11,7 @@
     "ConfusedGryphon (Textures)"
   ],
   "contact": {
-    "homepage": "",
+    "homepage": "https://www.curseforge.com/minecraft/mc-mods/bookshelving",
     "sources": "https://github.com/P3NG00/MoreBookshelvesFabricMod",
     "issues": "https://github.com/P3NG00/MoreBookshelvesFabricMod/issues"
   },
@@ -24,6 +24,7 @@
     ]
   },
   "mixins": [
+    "morebookshelves.mixins.json"
   ],
   "depends": {
     "fabricloader": ">=0.9.0",

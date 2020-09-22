@@ -69,7 +69,3 @@ publishing {
 		// mavenLocal()
 	}
 }
-
-minecraft {
-	accessWidener = file("src/main/resources/morebookshelves.accesswidener")
-}

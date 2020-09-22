@@ -4,7 +4,7 @@
   "package": "com.p3ng00.morebookshelves.mixin",
   "compatibilityLevel": "JAVA_8",
   "mixins": [
-    "Mixin"
+    "EnchantmentScreenHandlerMixin"
   ],
   "injectors": {
     "defaultRequire": 1

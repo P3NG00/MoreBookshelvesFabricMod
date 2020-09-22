@@ -1,6 +1,17 @@
 # More Bookshelves Mod Fabric
 
+Ever thought that the 'Bookshelf' was too limiting in variety?
+
+###<i>Look no further!</i>
+
+This mod adds the rest of the Bookshelf variants into Minecraft!
+
+![Jungle Bookshelf](https://i.imgur.com/uNFqNyp.png)
+![Dark Oak Bookshelf](https://i.imgur.com/WZMSYuj.png)
+![Crimson Bookshelf](https://i.imgur.com/7CBgm1m.png)
+
 ## MIT License
+
 
 Copyright (c) 2020 Bryant Finnern
 
