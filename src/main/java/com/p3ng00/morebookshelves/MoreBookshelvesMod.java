@@ -1,6 +1,5 @@
 package com.p3ng00.morebookshelves;
 
-import com.google.common.collect.Lists;
 import net.fabricmc.api.ModInitializer;
 import net.fabricmc.fabric.api.registry.FlammableBlockRegistry;
 import net.fabricmc.fabric.api.registry.FuelRegistry;
@@ -14,23 +13,24 @@ import net.minecraft.util.Identifier;
 import net.minecraft.util.Pair;
 import net.minecraft.util.registry.Registry;
 
-import java.util.List;
-
 public class MoreBookshelvesMod implements ModInitializer {
 
     @Override
     public void onInitialize() {
 
-        List<Pair<String, Boolean>> types = Lists.newArrayList();
-        types.add(new Pair<>("spruce", true));
-        types.add(new Pair<>("birch", true));
-        types.add(new Pair<>("jungle", true));
-        types.add(new Pair<>("acacia", true));
-        types.add(new Pair<>("dark_oak", true));
-        types.add(new Pair<>("crimson", false));
-        types.add(new Pair<>("warped", false));
+        Pair<String, Boolean>[] types = new Pair[] {
 
-        types.forEach(type -> {
+            new Pair<>("spruce", true),
+            new Pair<>("birch", true),
+            new Pair<>("jungle", true),
+            new Pair<>("acacia", true),
+            new Pair<>("dark_oak", true),
+            new Pair<>("crimson", false),
+            new Pair<>("warped", false)
+
+        };
+
+        for (Pair<String, Boolean> type : types) {
 
             Block bookshelf = new Block(AbstractBlock.Settings.copy(Blocks.BOOKSHELF));
             Identifier id = new Identifier("morebookshelves", String.format("%s_bookshelf", type.getLeft()));
@@ -44,7 +44,7 @@ public class MoreBookshelvesMod implements ModInitializer {
 
             }
 
-        });
+        }
 
     }
 

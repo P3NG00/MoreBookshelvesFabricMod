@@ -1,5 +1,7 @@
+.gitignore
 .gradle/
 .idea/
 build/
 run/
 more_bookshelves_logo.png
+move_script.bat
