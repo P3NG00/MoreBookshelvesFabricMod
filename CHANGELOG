@@ -12,3 +12,8 @@ v0.0.0
 
 v0.0.1
 * Fixed overriding Minecraft's default language file
+
+v0.1.0
+* Moved Bookshelf tag from 'morebookshelves:bookshelves' to 'minecraft:bookshelves'
+* Simplified Enchantment Table mixin (thanks, ramidzkh!)
++ Added 'zh_cn.json' (Chinese, Mainland China) (thanks, linzexin022!)
